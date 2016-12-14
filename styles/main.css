@@ -1,7 +1,7 @@
 html {font-size: 1em;}
 
 body {
-  background-color: white;
+  background-color: #F2F2F2;
   font-family: 'Libre Baskerville', serif;
   font-weight: 400;
   line-height: 1.45;
@@ -28,3 +28,24 @@ h3 {font-size: 1.999em;}
 h4 {font-size: 1.414em;}
 
 small, .font_small {font-size: 0.707em;}
+
+a {
+  color: #AD3717;
+}
+
+a.icon-link {
+  color: #333;
+}
+
+/* Structural */
+
+.container {
+  max-width: 560px;
+  padding: 0 30px;
+  margin: 50px auto;
+}
+
+.separator {
+  border-top: 1px solid #CCC;
+  margin: 40px 0;
+}
