@@ -4,6 +4,8 @@ body {
   margin-top: 5%;
 }
 
+/* Typography */
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Libre Baskerville', serif;
 }
@@ -20,15 +22,23 @@ a.icon-link {
   color: #333;
 }
 
+.blurb {
+  color: #666;
+}
+
+/* Separator */
+
 .separator {
   border-top: 1px solid #CCC;
   margin: 40px 0;
 }
 
-ul {
+/* Navigation */
+
+ul.nav {
   list-style: none;
 }
 
-ul li a {
+ul.nav li a {
   text-decoration: none;
 }
