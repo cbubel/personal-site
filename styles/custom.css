@@ -26,6 +26,11 @@ a.icon-link {
   color: #666;
 }
 
+.pushed {
+  border-left: 5px solid #9E9E9E;
+  padding-left: 20px;
+}
+
 /* Separator */
 
 .separator {
