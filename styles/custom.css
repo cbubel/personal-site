@@ -12,6 +12,10 @@ a {
   color: #AD3717;
 }
 
+a:hover {
+  color: #7D260F;
+}
+
 a.icon-link {
   color: #333;
 }
@@ -19,4 +23,21 @@ a.icon-link {
 .separator {
   border-top: 1px solid #CCC;
   margin: 40px 0;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+ul li:last-child {
+  margin-right: 0;
+}
+
+ul li a {
+  text-decoration: none;
 }
