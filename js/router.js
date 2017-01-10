@@ -19,12 +19,11 @@ function getPath() {
     return window.location.href.split("#/")[1];
 };
 
-window.onhashchange = function(event) {
+function loadHandler(event) {
     event.preventDefault();
     load();
-};
+}
 
-window.onload = function(event) {
-    event.preventDefault();
-    load();
-};
+window.onhashchange = loadHandler(event);
+
+window.onload = loadHandler(event);
