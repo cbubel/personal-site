@@ -8,7 +8,7 @@ url:         "http://csbubel.com"
 date_format: "%b %-d, %Y"
 header_pages:
  - about.md
- - contact.html
+ #- contact.html
 
 # Google services
 google_verification:
