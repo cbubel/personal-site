@@ -1,0 +1,29 @@
+body {
+  font-family: 'Lora', serif;
+  padding: 50px;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.project-image-container {
+  text-align: center;
+}
+
+img {
+  width: 75%;
+  box-shadow: 0 0 10px 2px #999;
+  border-radius: 3px;
+}
+
+#skills table tbody.sub-header {
+  font-weight: bold;
+  font-size: 1.17em;
+}
+
+#skills table tbody tr td {
+  padding-right: 10px;
+}
+
+b {
+  text-decoration: underline;
+}
