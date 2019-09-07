@@ -1,8 +1,12 @@
 body {
   font-family: 'Lora', serif;
-  padding: 50px;
+  padding: 40px 50px;
   margin: 0 auto;
   max-width: 700px;
+}
+
+p {
+  line-height: 1.5em;
 }
 
 .project-image-container {
@@ -25,5 +29,9 @@ img {
 }
 
 b {
-  text-decoration: underline;
+  background-color: #00B356;
+  font-weight: normal;
+  color: white;
+  padding: 0px 5px 1px 5px;
+  border-radius: 3px;
 }
