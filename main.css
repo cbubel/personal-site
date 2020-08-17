@@ -1,8 +1,21 @@
 body {
-  font-family: 'Lora', serif;
+  font-family: 'Libre Baskerville', serif;
   padding: 40px 50px;
   margin: 0 auto;
   max-width: 700px;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid #CCC;
+}
+
+header, section {
+  text-align: center;
+}
+
+section {
+  margin-bottom: 22px;
 }
 
 p {
@@ -29,9 +42,11 @@ img {
 }
 
 b {
-  background-color: #00B356;
+  /* background-color: #00B356; */
   font-weight: normal;
-  color: white;
+  /* color: white;
   padding: 0px 5px 1px 5px;
-  border-radius: 3px;
+  border-radius: 3px; */
+  /* text-decoration: underline; */
+  /* border-bottom: 4px dotted #00B356 */
 }
