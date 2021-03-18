@@ -1,12 +1,10 @@
 ---
 layout: post
-title:  "Using iOS Shortcuts to Log Fly Fishing Catches"
-date:   2021-03-16 13:00:00 -0400
+title: "Tracking Fly Fishing Catches with iOS Shortcuts"
+date: 2021-03-16 13:00:00 -0400
 categories: development
 ---
-One of the reasons I enjoy Software Engineering is that a lot of the work is about creating solutions to solve interesting problems. This tends to carry over into my everyday life, leading me to think up (sometimes absurd) solutions to problems I run into. The latest instance of this has to do with one of my favorite hobbies: fly fishing.
-
-I recently rediscovered the iOS Shortcuts app, which allows you to create "scripts" that can be executed via Siri to kick off a bunch of different actions. Because I've been gearing up for the opening day of the fishing season, I immediately had an idea when I revisited this app: I could create a shortcut to easily log some data when I catch a fish.
+I recently "rediscovered" the iOS Shortcuts app, which allows you to create custom scripts that can be executed via Siri to kick off a number of configurable actions. I always thought this was a cool app, but I could never think of anything interesting to do with it. As I was taking stock of my fly fishing gear for the upcoming season, however, inspiration struck. I've always wanted a way to log some data around the fish I catch, so I decided to use the Shortcuts app to create a simple tracker.
 
 The steps of the shortcut are:
 1. Speak "What kind of fish did you catch"
@@ -30,4 +28,4 @@ timestamp,latitude,longitude,temperature,condition,fish
 
 I'm sure there's already an app out there that does something like this, but, as I mentioned in my post on Obsidian, I'm a big fan of having control over my data. I really like this solution because it simply appends each line to a CSV in my iCloud Drive. At the end of the day, everything is just files on machines, so I particularly like when those files are on _my_ machine (albeit, backed up in iCloud).
 
-Now that I have the CSV, the next step is to add a map (using either Google Maps or Leaflet) to my site so I can plot the catches!
+Now that I have the CSV, I can display the markers on a map using LeafletJS. Check it out [here](/fish-tracker).
