@@ -29,7 +29,7 @@ url: "http://csbubel.com" # the base hostname & protocol for your site, e.g. htt
 show_excerpts: true
 
 # Build settings
-theme: minima
+remote_theme: jekyll/minima
 plugins:
   - jekyll-feed
 
