@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-03-18T20:37:53-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">C.S. Bubel</title><subtitle>Software Engineer</subtitle><entry><title type="html">Tracking Fly Fishing Catches with iOS Shortcuts</title><link href="http://localhost:4000/development/2021/03/16/ios-fish-tracker.html" rel="alternate" type="text/html" title="Tracking Fly Fishing Catches with iOS Shortcuts" /><published>2021-03-16T13:00:00-04:00</published><updated>2021-03-16T13:00:00-04:00</updated><id>http://localhost:4000/development/2021/03/16/ios-fish-tracker</id><content type="html" xml:base="http://localhost:4000/development/2021/03/16/ios-fish-tracker.html">&lt;p&gt;I recently “rediscovered” the iOS Shortcuts app, which allows you to create custom scripts that can be executed via Siri to kick off a number of configurable actions. I always thought this was a cool app, but I could never think of anything interesting to do with it. As I was taking stock of my fly fishing gear for the upcoming season, however, inspiration struck. I’ve always wanted a way to log some data around the fish I catch, so I decided to use the Shortcuts app to create a simple tracker.&lt;/p&gt;
+
+&lt;p&gt;The steps of the shortcut are:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Speak “What kind of fish did you catch”&lt;/li&gt;
+  &lt;li&gt;Dictate text (say the type of fish)&lt;/li&gt;
+  &lt;li&gt;Get current weather at current location&lt;/li&gt;
+  &lt;li&gt;Get current location&lt;/li&gt;
+  &lt;li&gt;Get file at /Shortcuts/catches.csv
+    &lt;ul&gt;
+      &lt;li&gt;If file does not exist, append the following line to the file at the same path in order to create the file and establish the CSV header.
+ &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;timestamp,latitude,longitude,temperature,condition,fish&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Append the following comma-separated line of variables to the file at /catches.csv.
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Current-Date-Time,Latitude,Longitude,Temperature,Condition,Dictated-Text&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I’m taking an HCI class for my Master’s right now, so I’ve been thinking more and more about the different views of the user and how designers can design for the context in which a task is taking place. Because fly fishing typically involves wading in a creek and handling various pieces of equipment, it’d be difficult for the user to log a catch on their phone through a touch-based UI. Because iOS Shortcuts can be triggered by Siri, and because I have an Apple Watch, I can simply raise my wrist and say “Hey Siri, I caught a fish,” and the shortcut will kick off. No need to take out my phone or touch my Watch!&lt;/p&gt;
+
+&lt;p&gt;It’s not perfect, and it’s actually quite slow, but it’s incredibly simple. Even better, I was able to use what I already had to build something to solve an actual problem. The result is the following CSV:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;timestamp,latitude,longitude,temperature,condition,fish
+2021-03-16T16:12:50-04:00,39.123456,-75.123456,39.2°F,Rain,Brown trout
+2021-03-16T16:55:40-04:00,39.123456,-75.123456,37.4°F,Showers,Brook trout
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;I’m sure there’s already an app out there that does something like this, but, as I mentioned in my post on Obsidian, I’m a big fan of having control over my data. I really like this solution because it simply appends each line to a CSV in my iCloud Drive. At the end of the day, everything is just files on machines, so I particularly like when those files are on &lt;em&gt;my&lt;/em&gt; machine (albeit, backed up in iCloud).&lt;/p&gt;
+
+&lt;p&gt;Now that I have the CSV, I can display the markers on a map using LeafletJS. Check it out &lt;a href=&quot;/fish-tracker&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="development" /><summary type="html">I recently “rediscovered” the iOS Shortcuts app, which allows you to create custom scripts that can be executed via Siri to kick off a number of configurable actions. I always thought this was a cool app, but I could never think of anything interesting to do with it. As I was taking stock of my fly fishing gear for the upcoming season, however, inspiration struck. I’ve always wanted a way to log some data around the fish I catch, so I decided to use the Shortcuts app to create a simple tracker.</summary></entry><entry><title type="html">Using Obsidian as a Second Brain</title><link href="http://localhost:4000/tools/2021/03/05/obsidian-second-brain.html" rel="alternate" type="text/html" title="Using Obsidian as a Second Brain" /><published>2021-03-05T09:00:00-05:00</published><updated>2021-03-05T09:00:00-05:00</updated><id>http://localhost:4000/tools/2021/03/05/obsidian-second-brain</id><content type="html" xml:base="http://localhost:4000/tools/2021/03/05/obsidian-second-brain.html">&lt;p&gt;This past January, I started my Master’s degree in Computer Science through Georgia Tech. Having completed my undergraduate degree in December of 2016, it’d been a while since I last had to watch lectures, take notes, and manage assignments. In undergrad, I relied primarily on Google Drive for all of my notes and assignments, but I decided to try something different for my first graduate class.&lt;/p&gt;
+
+&lt;p&gt;I’m a proponent of technologies that give me control over my own data, which is why I love &lt;a href=&quot;https://obsidian.md&quot;&gt;Obsidian&lt;/a&gt;. At a very basic level, Obsidian is a Markdown editor that operates on local files. Additionally, it can also act as a sort of &lt;a href=&quot;https://en.wikipedia.org/wiki/Zettelkasten&quot;&gt;Zettelkasten&lt;/a&gt; by allowing files to be linked together to form connections between related information.&lt;/p&gt;
+
+&lt;p&gt;While I’m not yet using it in a full “slip box” style, it’s still incredibly powerful for my use case, which is to take notes as I watch lecture videos. So far, it’s been very performant and has made searching and navigating incredibly easy. It also has Vim keybindings built in, which is a huge bonus.&lt;/p&gt;
+
+&lt;p&gt;Obsidian itself is free, but you can pay a monthly subscription for encrypted syncing to keep things up to date across devices. Personally, I simply store my folder of notes in iCloud Drive, which effectively does the same thing.&lt;/p&gt;
+
+&lt;p&gt;Below, you can see how I’m currently managing the files for my class. All of the Markdown files for lecture nodes are stored in the &lt;em&gt;Module Notes&lt;/em&gt; folder.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/obsidian_sample.png&quot; alt=&quot;Obsidian example layout&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We have our first test this week, so I created a new note to aggregate all the relevant content that’s going to be on it. Here, you can see the links in action, both on the rendered Markdown in the note, as well as in the graph view with a visual of the connections. Creating a new link is as easy as typing:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[[2.6 - Mental Models and Representations]]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;I’m really happy with this workflow so far, primarily because I love that it’s just a set of Markdown files sitting locally on my machine (and syncing through iCloud). While the desktop app is great, there isn’t currently a native mobile app, though it is being worked on. That said, because it’s just Markdown, you can use essentially any text editor in the meantime.&lt;/p&gt;
+
+&lt;p&gt;There’s also a great set of plugins, one of which does a decent job of extracting highlights from PDFs. I haven’t fully committed to using it yet, simply because PDF highlighting is a little clunky at times, and I’m still trying to decide if I want to integrate those with &lt;a href=&quot;https://readwise.io&quot;&gt;Readwise&lt;/a&gt; instead.&lt;/p&gt;
+
+&lt;p&gt;Anyway, that’s just a quick overview of how I’ve been managing my course materials this semester. I highly recommend trying Obsidian if you’re looking for a simple way to create and manage your knowledge base.&lt;/p&gt;</content><author><name></name></author><category term="tools" /><summary type="html">This past January, I started my Master’s degree in Computer Science through Georgia Tech. Having completed my undergraduate degree in December of 2016, it’d been a while since I last had to watch lectures, take notes, and manage assignments. In undergrad, I relied primarily on Google Drive for all of my notes and assignments, but I decided to try something different for my first graduate class.</summary></entry></feed>
