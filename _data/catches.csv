@@ -1,0 +1,5 @@
+timestamp,latitude,longitude,temperature,condition,fish
+2021-02-07T16:12:50-04:00,39.880080,-75.427811,39.2°F,Rain,Brown trout
+2021-02-26T16:55:40-04:00,39.946334,-75.422850,37.4°F,Showers,Brook trout
+2021-03-09T10:20:13-04:00,41.011470,-75.731713,37.4°F,Showers,Rainbow trout
+2021-03-15T06:34:10-04:00,40.189247,-75.784567,37.4°F,Showers,Brook trout
