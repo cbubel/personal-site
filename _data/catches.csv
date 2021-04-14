@@ -1,5 +1,4 @@
-timestamp,latitude,longitude,temperature,condition,fish
-2021-02-07T16:12:50-04:00,39.880080,-75.427811,39.2°F,Rain,Brown trout
-2021-02-26T16:55:40-04:00,39.946334,-75.422850,37.4°F,Showers,Brook trout
-2021-03-09T10:20:13-04:00,41.011470,-75.731713,37.4°F,Showers,Rainbow trout
-2021-03-15T06:34:10-04:00,40.189247,-75.784567,37.4°F,Showers,Brook trout
+timestamp,latitude,longitude,temperature,condition,fish,fly
+2021-04-13T18:18:20-04:00,39.88435468230041,-75.43093624887585,64.4°F,Clear,Bluegill,Parachute Adams
+2021-04-13T18:24:51-04:00,39.88498080830954,-75.430155763534,64.4°F,Clear,Fallfish,Parachute Adams
+2021-04-13T18:47:05-04:00,39.8857210127814,-75.42885081224289,62.6°F,Clear,Bluegill,Blue winged olive
