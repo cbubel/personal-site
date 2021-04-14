@@ -1,6 +1,6 @@
 {% leaflet_map {"center": [40.476090, -75.647529], "zoom" : 7 } %}
     {% for catch in site.data.catches %}
-        {% capture marker_text %}{{catch.timestamp | date: '%B %d, %Y'}}: {{catch.fish}}{% endcapture %}
+        {% capture marker_text %}{{catch.timestamp | date: '%B %d, %Y'}}: {{catch.fish}} on a {{catch.fly}}{% endcapture %}
         {% leaflet_marker {
             "latitude": {{ catch.latitude }},
             "longitude": {{ catch.longitude }},

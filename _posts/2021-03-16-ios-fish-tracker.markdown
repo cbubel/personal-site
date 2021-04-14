@@ -21,7 +21,7 @@ The steps of the shortcut are:
     - If file does not exist, append the following line to the file at the same path in order to create the file and establish the CSV header.
     `timestamp,latitude,longitude,temperature,condition,fish,fly`
 10. Append the following comma-separated line of variables to the file at /catches.csv.
-    - `Current-Date-Time,Latitude,Longitude,Temperature,Condition,Dictated-Text,Dictated-Text`
+    - `Current-Date-Time,Latitude,Longitude,Temperature,Condition,Fish,Fly`
 
 It's not perfect, and it's actually quite slow, but it's incredibly simple. Even better, I was able to use what I already had to build something to solve an actual problem. The result is the following CSV:
 ```
